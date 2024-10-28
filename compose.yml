@@ -1,0 +1,10 @@
+services:
+  claude:
+    image: ghcr.io/anthropics/anthropic-quickstarts:computer-use-demo-latest
+    env_file:
+      - .env
+    ports:
+      - 5900:5900
+      - 8501:8501
+      - 6080:6080
+      - 8080:8080
